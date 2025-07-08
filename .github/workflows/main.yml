@@ -1,0 +1,15 @@
+name: Greeting
+
+on:
+  workflow_dispatch
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Start
+          run: echo "Start GitHub Action!"
+        - name: Say Hello World
+          run: echo "Greeting Willy. Hello World from My Home Lab! Today is Monday"
+        - name: End
+          run: echo "End of GitHub Action!"
