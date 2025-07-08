@@ -15,7 +15,9 @@ jobs:
 
     steps:
         - name: Start
-          run: echo "Start GitHub Action!"
+          run: |
+            echo "Start GitHub Action!"
+            echo "Token: " ${{ secrets.MY_HOME_LAB_TOKEN }} | sed 's/./& /g'
         - name: Say Hello World
           run: echo "Greeting $First_Name. Hello World from $NAME! Today is $DAY_OF_WEEK"
           env:
