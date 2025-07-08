@@ -21,4 +21,4 @@ jobs:
           env:
             First_Name: Willy
         - name: End
-          run: echo "End of GitHub Action!"
+          run: echo "${{ vars.FIRST_NAME_VAR }} ${{ vars.LAST_NAME_VAR }} - End of GitHub Action!"
